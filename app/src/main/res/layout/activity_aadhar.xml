@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/votee"
+    tools:context=".Aadhar">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="24dp"
+        android:backgroundTint="@color/cardview_shadow_start_color"
+        android:background="@drawable/lavender_border">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Details"
+            android:textSize="36sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/laadhaar"
+            android:background="@drawable/lavender_border"
+            android:layout_marginTop="50dp"
+            android:padding="8dp"
+            android:hint="Aadhaar"
+            android:inputType="number"
+            android:drawableLeft="@drawable/ic_baseline_person_pin_24"
+            android:drawablePadding="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/lvoter"
+            android:background="@drawable/lavender_border"
+            android:layout_marginTop="45dp"
+            android:padding="8dp"
+            android:hint="Voter Id"
+            android:inputType="textPhonetic"
+            android:drawableLeft="@drawable/ic_baseline_how_to_vote_24"
+            android:drawablePadding="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/lphone"
+            android:background="@drawable/lavender_border"
+            android:layout_marginTop="40dp"
+            android:padding="8dp"
+            android:hint="Phone"
+            android:inputType="number"
+            android:drawableLeft="@drawable/ic_baseline_phone_android_24"
+            android:drawablePadding="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Submit"
+            android:id="@+id/sub_button"
+            android:textSize="18sp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/lavender_border"
+            android:backgroundTint="@color/teal_700"
+            android:shadowRadius="30"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

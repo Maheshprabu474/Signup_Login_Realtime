@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/votee"
+    tools:context=".Candidate">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="24dp"
+        android:backgroundTint="@color/cardview_shadow_start_color"
+        android:background="@drawable/lavender_border">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="141dp"
+            android:layout_height="125dp"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            app:civ_border_color="#FF000000"
+            android:layout_gravity="center"
+            app:civ_border_width="2dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="124dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vote"
+            android:textSize="36sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/vote_name"
+            android:background="@drawable/lavender_border"
+            android:layout_marginTop="40dp"
+            android:padding="8dp"
+            android:hint="Name"
+            android:textColorHint="@color/white"
+            android:drawableLeft="@drawable/ic_baseline_person_pin_24"
+            android:drawablePadding="8dp"
+            android:textColor="@color/white"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/vote_party"
+            android:background="@drawable/lavender_border"
+            android:layout_marginTop="40dp"
+            android:padding="8dp"
+            android:hint="Party"
+            android:textColorHint="@color/white"
+            android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+            android:drawablePadding="8dp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="vote"
+            android:id="@+id/vote_btn"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/lavender_border"
+            android:backgroundTint="@color/teal_700"
+            android:shadowRadius="30"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
